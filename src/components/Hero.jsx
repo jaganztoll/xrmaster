@@ -3,9 +3,6 @@ import wavesLight from '../assets/waves.svg';
 import wavesDark from '../assets/waves_white.svg';
 
 const Hero = ({ darkMode }) => {
-
-  console.log("darkMode is", darkMode); // Debugging
-
   return (
     <section className="relative h-screen w-full" style={{ fontFamily: 'var(--font-quicksand)' }}>
       <div className="relative z-10 h-full flex flex-col items-center justify-start pt-40">
