@@ -1,7 +1,7 @@
-import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectInfo from './components/ProjectInfo';
-import { HiSun, HiMoon } from "react-icons/hi2";
+import Footer from './components/Footer';
 
 import { useState, useEffect } from "react";
 
@@ -17,17 +17,14 @@ const App = () => {
   }, [darkMode]);
 
   return (
-    <div className="h-screen flex flex-col items-center bg-[var(--background)] text-[var(--text)]">
-      <button
-        onClick={() => setDarkMode(!darkMode)}
-        className="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2.5 px-2.5 rounded-full focus:outline-none focus:shadow-outline"
-      >
-        {darkMode ? <HiSun style={{ fontSize: '2em'}} className="inline-block align-middle" /> : <HiMoon style={{ fontSize: '2em'}} className="inline-block align-middle" />}
-      </button>
-      <Hero />
-      <ProjectInfo />
-      <Footer />
-    </div>
+    <>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <div className="bg-[var(--background)] text-[var(--text)]">
+        <Hero darkMode={darkMode} setDarkMode={setDarkMode} />
+        <ProjectInfo />
+        <Footer />
+      </div>
+    </>
   );
 };
 

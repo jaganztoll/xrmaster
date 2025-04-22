@@ -1,20 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss";
+
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+  --font-quicksand: 'Quicksand', sans-serif;
+}
 
 @layer base {
   :root {
-    --text: #080d0a;
-    --background: #f8f9fa;
-    --primary: #0d6efd;
-    --secondary: #6c757d;
-    --accent: #198754;
+    --text: #0D1118;
+    --background: #e8e8e8;
+    --primary: rgba(13, 17, 24, 0.8);
+    --secondary: rgba(232, 232, 232, 0.5);
+    --accent: #FA7D19;
   }
 
   /* Dark Mode */
   .dark {
-    --text: #f8f9fa;
-    --background: #212529;
-    --primary: #0d6efd;
-    --secondary: #6c757d;
-    --accent: #198754;
+    --text: #e8e8e8;
+    --background: #0D1118;
+    --primary: rgba(232, 232, 232, 0.8);
+    --secondary: rgba(13, 17, 24, 0.5);
+    --accent: #FA7D19;
   }
 }
