@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ProjectInfo = () => {
+const Results = () => {
   return (
-    <section className="relative z-10 w-full py-20 px-6 bg-[var(--background)] text-[var(--text)] font-quicksand">
+    <section className="relative z-10 w-full py-20 px-6 bg-[var(--background)] text-[var(--text)]" style={{ fontFamily: 'var(--font-quicksand)' }}>
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-semibold mb-6">Projektbeschreibung</h2>
         <p className="font-thin text-xl text-justify mb-6 leading-7">
@@ -22,4 +22,4 @@ const ProjectInfo = () => {
   );
 };
 
-export default ProjectInfo;
+export default Results;

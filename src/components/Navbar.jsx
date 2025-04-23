@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { HiSun, HiMoon } from "react-icons/hi2";
 import logoLight from '../assets/JG_logo_ohne_Name_light.png';
 import logoDark from '../assets/JG_logo_ohne_Name_dark.png';
-
+import { Link } from 'react-scroll'; // react-scroll für das Scrollen zu Abschnitten
 
 const Navbar = ({ darkMode, setDarkMode }) => {
     const [scrolled, setScrolled] = useState(false);
@@ -33,7 +33,24 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                         style={{ imageRendering: "crisp-edges" }}
                     />
                 </div>
-                {/* Button auf der rechten Seite */}
+
+                {/* Interne Navigation */}
+                <div className="flex space-x-6">
+                    <Link to="projectinfo" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium">
+                        Projektinfo
+                    </Link>
+                    <Link to="concept" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium">
+                        Konzept
+                    </Link>
+                    <Link to="results" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium">
+                        Ergebnisse
+                    </Link>
+                    <Link to="about" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium">
+                        Über mich
+                    </Link>
+                </div>
+
+                {/* Dark Mode Button */}
                 <div>
                     <button
                         onClick={() => setDarkMode(!darkMode)}
