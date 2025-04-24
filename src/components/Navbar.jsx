@@ -20,31 +20,33 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     }, []);
 
     return (
-        <nav className={`fixed top-0 w-full z-50 px-6 py-4 transition-colors duration-300 ${scrolled ? "bg-[var(--secondary)] bg-opacity-80 shadow-md" : "bg-transparent"} text-[var(--text)]`}>
-            <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center">
+        <nav className={`fixed top-0 w-full z-50 py-4 transition-colors duration-300 ${scrolled ? "bg-[var(--primary)] bg-opacity-80 shadow-md" : "bg-transparent"} text-[var(--text)] selection:bg-[var(--accent)]`}>
+            <div className="w-full max-w-screen-2xl mx-auto flex justify-between items-center px-6">
+
                 {/* Logo */}
                 <div>
-                    <img
-                        src={darkMode ? logoLight : logoDark}
-                        //src={darkMode ? (scrolled ? logoDark : logoLight) : (scrolled ? logoLight : logoDark)} //Logozustand ändert sich mit Scrollen
-                        alt="Logo"
-                        className="h-10 w-auto"
-                        style={{ imageRendering: "crisp-edges" }}
-                    />
+                    <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
+                        <img
+                            src={darkMode ? logoLight : logoDark}
+                            //src={darkMode ? (scrolled ? logoDark : logoLight) : (scrolled ? logoLight : logoDark)} //Logozustand ändert sich mit Scrollen
+                            alt="Logo"
+                            className="h-10 w-auto select-none"
+                        />
+                    </Link>
                 </div>
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex space-x-6 items-center">
-                    <Link to="projectinfo" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium">
+                    <Link to="projectinfo" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer">
                         Projektinfo
                     </Link>
-                    <Link to="concept" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium">
+                    <Link to="concept" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer">
                         Konzept
                     </Link>
-                    <Link to="results" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium">
+                    <Link to="results" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer">
                         Ergebnisse
                     </Link>
-                    <Link to="about" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium">
+                    <Link to="about" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer">
                         Über mich
                     </Link>
                     <button
@@ -69,7 +71,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
             {/* Mobile Menu */}
             {menuOpen && (
-                <div className="md:hidden mt-4 flex flex-col space-y-4 px-6">
+                <div className="absolute right-10 mt-4 flex flex-col space-y-4 px-6 py-4 bg-[var(--primary)] bg-opacity-80 shadow-md rounded-md md:hidden z-50">
                     <Link to="projectinfo" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium" onClick={() => setMenuOpen(false)}>
                         Projektinfo
                     </Link>
