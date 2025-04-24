@@ -6,8 +6,9 @@ const Results = () => {
     <section className="w-full py-20 px-6 bg-[var(--background)] text-[var(--text)] font-quicksand selection:bg-[var(--accent)]">
       <Element name="results" className="h-screen flex items-center justify-center">
         <div className="max-w-4xl mx-auto">
+        //ToDo: Text überarbeiten, Ergebnisse einblenden (slide), ggf. von low bis high fidelity (Verlauf)
           <h2 className="text-4xl font-semibold mb-6">Ergebnisse</h2>
-          <p className="font-thin text-xl text-justify mb-6 leading-7">
+          <p className="font-thin text-xl text-justify leading-[1.5]">
             Diese Masterarbeit untersucht das Potenzial von Mixed Reality (MR) und Spatial User Interfaces,
             um das Angebot der ZDFmediathek durch eine innovative MR-basierte Erweiterung zu ergänzen. Aufbauend
             auf einer umfassenden Analyse der bestehenden ZDFmediathek und etablierter Designprinzipien wurden
