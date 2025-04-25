@@ -46,12 +46,15 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     <Link to="results" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer">
                         Ergebnisse
                     </Link>
+                    <Link to="thesis" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer">
+                        Download
+                    </Link>
                     <Link to="about" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer">
                         Über mich
                     </Link>
                     <button
                         onClick={() => setDarkMode(!darkMode)}
-                        className="hover:bg-[var(--accent)] p-2 rounded-full"
+                        className="hover:bg-[var(--accent)] p-2 rounded-full cursor-pointer"
                     >
                         {darkMode ? (
                             <HiSun className="text-[var(--text)] text-2xl" />
@@ -64,24 +67,27 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 {/* Mobile Burger Icon */}
                 <div className="md:hidden">
                     <button onClick={() => setMenuOpen(!menuOpen)}>
-                        {menuOpen ? <HiXMark className="text-3xl" /> : <HiBars3 className="text-3xl" />}
+                        {menuOpen ? <HiXMark className="text-3xl" /> : <HiBars3 className="text-3xl cursor-pointer" />}
                     </button>
                 </div>
             </div>
 
             {/* Mobile Menu */}
             {menuOpen && (
-                <div className="absolute right-10 mt-4 flex flex-col space-y-4 px-6 py-4 bg-[var(--primary)] bg-opacity-80 shadow-md rounded-md md:hidden z-50">
-                    <Link to="projectinfo" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium" onClick={() => setMenuOpen(false)}>
+                <div className="absolute right-10 mt-4 flex flex-col space-y-4 px-6 py-4 bg-[var(--primary)] shadow-md rounded-md md:hidden z-50">
+                    <Link to="projectinfo" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer" onClick={() => setMenuOpen(false)}>
                         Projektinfo
                     </Link>
-                    <Link to="concept" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium" onClick={() => setMenuOpen(false)}>
+                    <Link to="concept" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer" onClick={() => setMenuOpen(false)}>
                         Konzept
                     </Link>
-                    <Link to="results" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium" onClick={() => setMenuOpen(false)}>
+                    <Link to="results" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer" onClick={() => setMenuOpen(false)}>
                         Ergebnisse
                     </Link>
-                    <Link to="about" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium" onClick={() => setMenuOpen(false)}>
+                    <Link to="thesis" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer" onClick={() => setMenuOpen(false)}>
+                        Download
+                    </Link>
+                    <Link to="about" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer" onClick={() => setMenuOpen(false)}>
                         Über mich
                     </Link>
                     <button
@@ -89,7 +95,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                             setDarkMode(!darkMode);
                             setMenuOpen(false);
                         }}
-                        className="hover:bg-[var(--accent)] p-2 rounded-full self-start"
+                        className="hover:bg-[var(--accent)] p-2 rounded-full self-start cursor-pointer"
                     >
                         {darkMode ? (
                             <HiSun className="text-[var(--text)] text-2xl" />

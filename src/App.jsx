@@ -1,9 +1,10 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectInfo from './components/ProjectInfo';
-import Footer from './components/Footer';
 import Concept from './components/Concept';
 import Results from './components/Results';
+import Thesis from './components/Thesis';
+import Footer from './components/Footer';
 
 import { useState, useEffect } from "react";
 import { Element } from 'react-scroll';
@@ -28,6 +29,7 @@ const App = () => {
         <ProjectInfo darkMode={darkMode} setDarkMode={setDarkMode} />
         <Concept darkMode={darkMode} setDarkMode={setDarkMode} />
         <Results darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Thesis darkMode={darkMode} setDarkMode={setDarkMode} />
         <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
     </>

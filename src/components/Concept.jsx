@@ -16,7 +16,7 @@ const Concept = ({ darkMode }) => {
         {/* Inhalt */}
         <div className="font-quicksand selection:bg-[var(--accent)] text-[var(--text)]">
           <div className={`${darkMode ? '' : ''} bg-[var(--primary)] dark:bg-[var(--primary)] rounded-2xl px-4 py-4 max-w-4xl shadow-lg backdrop-blur-sm`}>
-          //ToDo: Text überarbeiten
+          //ToDo: Text überarbeiten - Klingt als hätte ich die nicht allein geschrieben
             <h2 className="text-4xl font-semibold mb-6">Konzeptphase</h2>
             <p className="font-thin text-xl text-justify leading-[1.5]">
               Die Konzeptentwicklung war ein iterativer Prozess, der durch kreative Techniken wie Brainstorming und Mind Mapping unterstützt wurde.
