@@ -10,14 +10,19 @@ import { useState, useEffect } from "react";
 import { Element } from 'react-scroll';
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
+  const [darkMode, setDarkMode] = useState(() => {
+    const storedMode = localStorage.getItem("darkMode");
+    return storedMode === "true";
+  });
+  
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
+
+    localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
   return (
