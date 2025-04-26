@@ -11,7 +11,7 @@ const ProjectInfo = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: 'easeOut' }}
             viewport={{ once: true }}>
-            <h2 className="text-4xl font-semibold mb-6">Projektinfo</h2>
+            <h1 className="text-4xl font-semibold mb-6">Projektinfo</h1>
             <p className="font-thin text-xl text-justify leading-[1.5]">
               Die Masterarbeit untersuchte das Potenzial von Mixed Reality (MR) und Spatial User Interfaces, um das Nutzungserlebnis
               der ZDFmediathek durch eine MR-basierte Anwendung zu erweitern. Dabei stand eine neue Kategorie 'Interaktiv' im Vordergrund.
