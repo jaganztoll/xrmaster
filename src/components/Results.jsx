@@ -13,15 +13,16 @@ import dokuLight from '../assets/adobeXD/images/light/03dokuslight.png';
 import dokuDark from '../assets/adobeXD/images/dark/03dokusdark.png';
 import dokuDetailsLight from '../assets/adobeXD/images/light/04mondlight.png';
 import dokuDetailsDark from '../assets/adobeXD/images/dark/04monddark.png';
-import playerLight from '../assets/adobeXD/images/light/05folgelight.png';
-import playerDark from '../assets/adobeXD/images/dark/05folgedark.png';
-import playerAmbientLight from '../assets/adobeXD/images/light/06playerlight.png';
-import playerAmbientDark from '../assets/adobeXD/images/dark/06playerdark.png';
+import playerAmbientLight from '../assets/adobeXD/images/light/05folgelight.png';
+import playerAmbientDark from '../assets/adobeXD/images/dark/05folgedark.png';
+import playerLight from '../assets/adobeXD/images/light/06playerlight.png';
+import playerDark from '../assets/adobeXD/images/dark/06playerdark.png';
+
 
 const Results = () => {
   return (
-    <section className="w-full py-20 px-6 bg-[var(--background)] text-[var(--text)] font-quicksand selection:bg-[var(--accent)]">
-      <Element name="results" >
+    <section className="w-full py-20 px-6 bg-[var(--background)] text-[var(--text)] font-quicksand selection:bg-[var(--accent)] overflow-x-hidden">
+      <Element name="results">
         <motion.h1 initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -29,13 +30,13 @@ const Results = () => {
           className="mt-8">
           <div className="max-w-4xl mx-auto">
             <div>
-              <h1 className="text-4xl font-semibold mb-6 text-left">Ergebnisse</h1>
-              <p className="font-thin text-xl text-justify leading-[1.5]">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-left">Ergebnisse</h1>
+            <p className="font-thin text-base md:text-xl text-justify leading-[1.6]">
                 Die kontinuierliche Diskussion und das Feedback führten zu einer finalen Lösung, die sowohl funktionalen als auch den ästhetischen
                 Anforderungen gerecht wird. Die verschiedenen Prototypen, die während des Prozesses entwickelt wurden, wurden detailliert getestet,
                 um die Benutzererfahrung zu optimieren und die Interaktivität in der Mixed Reality Mediathek zu gewährleisten.
               </p>
-              <p className="font-thin text-xl text-justify leading-[1.5] mt-4">
+              <p className="font-thin text-base md:text-xl text-justify leading-[1.6]">
                 Im Folgenden werden einige Beispiele der finalen Designentscheidungen gezeigt. Die gesamte Masterarbeit ist am Ende der Seite verlinkt.
               </p>
             </div>
@@ -44,25 +45,26 @@ const Results = () => {
 
         {/* 1. Vergleichsbild */}
         <motion.h2
-          initial={{ opacity: 0, x: -1000 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true, threshold: 0.1 }}
-          className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-16"
+          className="relative max-w-4xl w-full mx-auto text-xl md:text-2xl font-medium text-left mb-4 mt-24"
         >
           Startseite
         </motion.h2>
         <motion.div
-          initial={{ opacity: 0, x: -1000 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true, threshold: 0.1 }}
-          className="relative max-w-4xl w-full mx-auto"
+          className="relative max-w-4xl w-full mx-auto overflow-hidden"
         >
           <img
+            loading="lazy"
             src={background}
             alt="Hintergrund"
-            className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg"
+            className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg max-w-full h-auto"
           />
           <div className="relative z-20">
             <ReactCompareImage
@@ -70,32 +72,35 @@ const Results = () => {
               rightImage={startseiteDark}
               sliderLineColor="var(--accent)"
               alt="Vergleich zwischen Light und Dark Mode"
+              className="max-w-full h-auto"
+              style={{ maxWidth: '100%', height: 'auto' }}
             />
           </div>
         </motion.div>
 
         {/* 2. Vergleichsbild */}
         <motion.h2
-          initial={{ opacity: 0, x: 1000 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-32"
+          className="relative max-w-4xl w-full mx-auto text-xl md:text-2xl font-medium text-left mb-4 mt-24"
         >
           Rubriken
         </motion.h2>
         <motion.div
-          initial={{ opacity: 0, x: 1000 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative max-w-4xl w-full mx-auto"
+          className="relative max-w-4xl w-full mx-auto overflow-hidden"
         >
           <div className="relative max-w-4xl w-full mx-auto">
             <img
+              loading="lazy"
               src={background}
               alt="Hintergrund"
-              className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg"
+              className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg max-w-full h-auto"
             />
             <div className="relative z-20">
               <ReactCompareImage
@@ -103,6 +108,8 @@ const Results = () => {
                 rightImage={rubrikenDark}
                 sliderLineColor="var(--accent)"
                 alt="Vergleich zwischen Light und Dark Mode"
+                className="max-w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto' }}
               />
             </div>
           </div>
@@ -110,26 +117,27 @@ const Results = () => {
 
         {/* 3. Vergleichsbild */}
         <motion.h2
-          initial={{ opacity: 0, x: -1000 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-32"
+          viewport={{ once: true, threshold: 0.1 }}
+          className="relative max-w-4xl w-full mx-auto text-xl md:text-2xl font-medium text-left mb-4 mt-24"
         >
-          Übersichtsseite Dokus & Rerportagen
+          Übersichtsseite Dokus & Reportagen
         </motion.h2>
         <motion.div
-          initial={{ opacity: 0, x: -1000 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="relative max-w-4xl w-full mx-auto"
+          viewport={{ once: true, threshold: 0.1 }}
+          className="relative max-w-4xl w-full mx-auto overflow-hidden"
         >
           <div className="relative max-w-4xl w-full mx-auto">
             <img
+              loading="lazy"
               src={background}
               alt="Hintergrund"
-              className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg"
+              className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg max-w-full h-auto"
             />
             <div className="relative z-20">
               <ReactCompareImage
@@ -137,6 +145,8 @@ const Results = () => {
                 rightImage={dokuDark}
                 sliderLineColor="var(--accent)"
                 alt="Vergleich zwischen Light und Dark Mode"
+                className="max-w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto' }}
               />
             </div>
           </div>
@@ -144,26 +154,27 @@ const Results = () => {
 
         {/* 4. Vergleichsbild */}
         <motion.h2
-          initial={{ opacity: 0, x: 1000 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-32"
+          className="relative max-w-4xl w-full mx-auto text-xl md:text-2xl font-medium text-left mb-4 mt-24"
         >
           Folgenübersicht 'Der Mond'
         </motion.h2>
         <motion.div
-          initial={{ opacity: 0, x: 1000 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative max-w-4xl w-full mx-auto"
+          className="relative max-w-4xl w-full mx-auto overflow-hidden"
         >
           <div className="relative max-w-4xl w-full mx-auto">
             <img
+              loading="lazy"
               src={background}
               alt="Hintergrund"
-              className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg"
+              className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg max-w-full h-auto"
             />
             <div className="relative z-20">
               <ReactCompareImage
@@ -171,6 +182,8 @@ const Results = () => {
                 rightImage={dokuDetailsDark}
                 sliderLineColor="var(--accent)"
                 alt="Vergleich zwischen Light und Dark Mode"
+                className="max-w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto' }}
               />
             </div>
           </div>
@@ -178,26 +191,27 @@ const Results = () => {
 
         {/* 5. Vergleichsbild */}
         <motion.h2
-          initial={{ opacity: 0, x: -1000 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-32"
+          viewport={{ once: true, threshold: 0.1 }}
+          className="relative max-w-4xl w-full mx-auto text-xl md:text-2xl font-medium text-left mb-4 mt-24"
         >
-          Videowiedergabe - Ambienteauswahl
+          Ambienteauswahl
         </motion.h2>
         <motion.div
-          initial={{ opacity: 0, x: -1000 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="relative max-w-4xl w-full mx-auto"
+          viewport={{ once: true, threshold: 0.1 }}
+          className="relative max-w-4xl w-full mx-auto overflow-hidden"
         >
           <div className="relative max-w-4xl w-full mx-auto">
             <img
+              loading="lazy"
               src={background}
               alt="Hintergrund"
-              className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg brightness-20"
+              className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg brightness-20 max-w-full h-auto"
             />
             <div className="relative z-20">
               <ReactCompareImage
@@ -205,6 +219,8 @@ const Results = () => {
                 rightImage={playerAmbientDark}
                 sliderLineColor="var(--accent)"
                 alt="Vergleich zwischen Light und Dark Mode"
+                className="max-w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto' }}
               />
             </div>
           </div>
@@ -212,16 +228,16 @@ const Results = () => {
 
         {/* 6. Vergleichsbild */}
         <motion.h2
-          initial={{ opacity: 0, x: 1000 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-32"
+          className="relative max-w-4xl w-full mx-auto text-xl md:text-2xl font-medium text-left mb-4 mt-24"
         >
           Videowiedergabe inkl. 3D-Modell
         </motion.h2>
         <motion.div
-          initial={{ opacity: 0, x: 1000 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
@@ -229,9 +245,10 @@ const Results = () => {
         >
           <div className="relative max-w-4xl w-full mx-auto">
             <img
+              loading="lazy"
               src={background}
               alt="Hintergrund"
-              className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg brightness-20"
+              className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg brightness-20 max-w-full h-auto"
             />
             <div className="relative z-20">
               <ReactCompareImage
@@ -239,11 +256,14 @@ const Results = () => {
                 rightImage={playerDark}
                 sliderLineColor="var(--accent)"
                 alt="Vergleich zwischen Light und Dark Mode"
+                className="max-w-full h-auto"
+                style={{ maxWidth: '100%', height: 'auto' }}
               />
               <img
+                loading="lazy"
                 src={backgroundMoon}
                 alt="Hintergrund Mond"
-                className="absolute top-50 left-0 -translate-x-[20%] h-100 w-100 z-10"
+                className="absolute top-[45%] left-0 -translate-x-[10%] h-[30vw] w-[30vw] max-h-[350px] max-w-[350px] z-10"
               />
             </div>
           </div>

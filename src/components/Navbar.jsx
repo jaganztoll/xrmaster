@@ -28,7 +28,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
                         <img
                             src={darkMode ? logoLight : logoDark}
-                            //src={darkMode ? (scrolled ? logoDark : logoLight) : (scrolled ? logoLight : logoDark)} //Logozustand ändert sich mit Scrollen
                             alt="Logo"
                             className="h-10 w-auto select-none"
                         />
@@ -75,7 +74,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
             {/* Mobile Menu */}
             {menuOpen && (
-                <div className="absolute right-10 mt-4 flex flex-col space-y-4 px-6 py-4 bg-[var(--primary)] shadow-md rounded-md md:hidden z-50">
+                <div className="absolute right-0 mt-4 flex flex-col space-y-4 px-6 py-4 bg-[var(--primary)] shadow-md rounded-md md:hidden z-50">
                     <Link to="projectinfo" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer" onClick={() => setMenuOpen(false)}>
                         Projektinfo
                     </Link>

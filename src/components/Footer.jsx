@@ -10,7 +10,7 @@ const Footer = ({ darkMode }) => {
         <img
           src={darkMode ? bhtLight : bhtDark}
           alt="BHT Logo"
-          className="h-14 w-auto mx-auto inline select-none"
+          className="h-14 w-auto mx-auto inline select-none align-middle"
         />
       </div>
     </footer>
