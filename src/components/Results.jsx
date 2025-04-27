@@ -46,8 +46,8 @@ const Results = () => {
         <motion.h2
           initial={{ opacity: 0, x: -1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          viewport={{ once: true, threshold: 0.1 }}
           className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-16"
         >
           Startseite
@@ -55,8 +55,8 @@ const Results = () => {
         <motion.div
           initial={{ opacity: 0, x: -1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          viewport={{ once: true, threshold: 0.1 }}
           className="relative max-w-4xl w-full mx-auto"
         >
           <img
@@ -78,7 +78,7 @@ const Results = () => {
         <motion.h2
           initial={{ opacity: 0, x: 1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-32"
         >
@@ -87,7 +87,7 @@ const Results = () => {
         <motion.div
           initial={{ opacity: 0, x: 1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative max-w-4xl w-full mx-auto"
         >
@@ -112,7 +112,7 @@ const Results = () => {
         <motion.h2
           initial={{ opacity: 0, x: -1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-32"
         >
@@ -121,7 +121,7 @@ const Results = () => {
         <motion.div
           initial={{ opacity: 0, x: -1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative max-w-4xl w-full mx-auto"
         >
@@ -146,7 +146,7 @@ const Results = () => {
         <motion.h2
           initial={{ opacity: 0, x: 1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-32"
         >
@@ -155,7 +155,7 @@ const Results = () => {
         <motion.div
           initial={{ opacity: 0, x: 1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative max-w-4xl w-full mx-auto"
         >
@@ -180,7 +180,7 @@ const Results = () => {
         <motion.h2
           initial={{ opacity: 0, x: -1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-32"
         >
@@ -189,7 +189,7 @@ const Results = () => {
         <motion.div
           initial={{ opacity: 0, x: -1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative max-w-4xl w-full mx-auto"
         >
@@ -214,7 +214,7 @@ const Results = () => {
         <motion.h2
           initial={{ opacity: 0, x: 1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative max-w-4xl w-full mx-auto text-2xl font-medium text-left mb-4 mt-32"
         >
@@ -223,7 +223,7 @@ const Results = () => {
         <motion.div
           initial={{ opacity: 0, x: 1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative max-w-4xl w-full mx-auto"
         >
