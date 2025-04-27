@@ -31,13 +31,13 @@ const Results = () => {
           <div className="max-w-4xl mx-auto">
             <div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-left">Ergebnisse</h1>
-            <p className="font-thin text-base md:text-xl text-justify leading-[1.6]">
+            <p className="font-thin text-base sm:text-xl text-justify leading-[1.6]">
                 Die kontinuierliche Diskussion und das Feedback führten zu einer finalen Lösung, die sowohl funktionalen als auch den ästhetischen
                 Anforderungen gerecht wird. Die verschiedenen Prototypen, die während des Prozesses entwickelt wurden, wurden detailliert getestet,
                 um die Benutzererfahrung zu optimieren und die Interaktivität in der Mixed Reality Mediathek zu gewährleisten.
               </p>
-              <p className="font-thin text-base md:text-xl text-justify leading-[1.6]">
-                Im Folgenden werden einige Beispiele der finalen Designentscheidungen gezeigt. Die gesamte Masterarbeit ist am Ende der Seite verlinkt.
+              <p className="font-thin text-base sm:text-xl text-justify leading-[1.6] mt-2">
+              Im Folgenden werden einige Beispiele der finalen Designentscheidungen gezeigt. Die gesamte Masterarbeit ist am Ende der Seite verlinkt.
               </p>
             </div>
           </div>
