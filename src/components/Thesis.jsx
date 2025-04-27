@@ -2,7 +2,6 @@ import React from 'react';
 import { Element } from 'react-scroll';
 import { DiGoogleDrive } from "react-icons/di";
 
-
 const Thesis = () => {
     return (
         <section className="w-full py-2 px-6 bg-[var(--background)] text-[var(--text)] font-quicksand selection:bg-[var(--accent)]">

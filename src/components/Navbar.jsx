@@ -49,9 +49,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     <Link to="thesis" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer">
                         Download
                     </Link>
-                    <Link to="about" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer">
-                        Über mich
-                    </Link>
+                    <a href="https://juliangruber.netlify.app" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer">
+                        Portfolio
+                    </a>
+
                     <button
                         onClick={() => setDarkMode(!darkMode)}
                         className="hover:bg-[var(--accent)] p-2 rounded-full cursor-pointer"
@@ -87,9 +88,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     <Link to="thesis" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer" onClick={() => setMenuOpen(false)}>
                         Download
                     </Link>
-                    <Link to="about" smooth={true} duration={500} className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer" onClick={() => setMenuOpen(false)}>
-                        Über mich
-                    </Link>
+                    <a href="https://juliangruber.netlify.app" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] font-quicksand font-medium cursor-pointer">
+                        Portfolio
+                    </a>
+
                     <button
                         onClick={() => {
                             setDarkMode(!darkMode);

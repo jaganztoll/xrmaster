@@ -18,8 +18,8 @@ const Hero = ({ darkMode }) => {
             Konzeption & prototypische Entwicklung einer Mixed Reality Version der
             ZDFmediathek im Ansatz von Spatial User Interfaces
           </h1>
-          <p className="font-thin text-xl mt-10">September 2024</p>
-          <p className="font-thin text-l">Julian Gruber</p>
+          <p className="font-thin text-2xl mt-10">September 2024</p>
+          <p className="font-thin text-xl">Julian Gruber</p>
         </div>
       </div>
     </section>
