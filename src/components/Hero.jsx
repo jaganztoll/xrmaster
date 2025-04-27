@@ -1,6 +1,6 @@
 import React from 'react';
 import wavesLight from '../assets/waves.svg';
-import wavesDark from '../assets/waves_white.svg';
+import wavesDark from '../assets/waveswhite.svg';
 
 const Hero = ({ darkMode }) => {
   return (

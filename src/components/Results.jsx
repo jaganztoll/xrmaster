@@ -5,18 +5,18 @@ import { motion } from 'framer-motion';
 
 import background from '../assets/adobeXD/images/background/00.jpg';
 import backgroundMoon from '../assets/adobeXD/images/background/01.png';
-import startseiteLight from '../assets/adobeXD/images/light/001_Startseite_light.png';
-import startseiteDark from '../assets/adobeXD/images/dark/001_Startseite_dark.png';
-import rubrikenLight from '../assets/adobeXD/images/light/002_Rubriken_light.png';
-import rubrikenDark from '../assets/adobeXD/images/dark/002_Rubriken_dark.png';
-import dokuLight from '../assets/adobeXD/images/light/011_Dokus_light.png';
-import dokuDark from '../assets/adobeXD/images/dark/011_Dokus_dark.png';
-import dokuDetailsLight from '../assets/adobeXD/images/light/033_Mond_F2_1_light.png';
-import dokuDetailsDark from '../assets/adobeXD/images/dark/033_Mond_F2_1_dark.png';
-import playerLight from '../assets/adobeXD/images/light/037_F2_VB2_light.png';
-import playerDark from '../assets/adobeXD/images/dark/037_F2_VB2_dark.png';
-import playerAmbientLight from '../assets/adobeXD/images/light/036_F2_VB1_light.png';
-import playerAmbientDark from '../assets/adobeXD/images/dark/036_F2_VB1_dark.png';
+import startseiteLight from '../assets/adobeXD/images/light/01startseitelight.png';
+import startseiteDark from '../assets/adobeXD/images/dark/01startseitedark.png';
+import rubrikenLight from '../assets/adobeXD/images/light/02rubrikenlight.png';
+import rubrikenDark from '../assets/adobeXD/images/dark/02rubrikendark.png';
+import dokuLight from '../assets/adobeXD/images/light/03dokuslight.png';
+import dokuDark from '../assets/adobeXD/images/dark/03dokusdark.png';
+import dokuDetailsLight from '../assets/adobeXD/images/light/04mondlight.png';
+import dokuDetailsDark from '../assets/adobeXD/images/dark/04monddark.png';
+import playerLight from '../assets/adobeXD/images/light/05folgelight.png';
+import playerDark from '../assets/adobeXD/images/dark/05folgedark.png';
+import playerAmbientLight from '../assets/adobeXD/images/light/06playerlight.png';
+import playerAmbientDark from '../assets/adobeXD/images/dark/06playerdark.png';
 
 const Results = () => {
   return (

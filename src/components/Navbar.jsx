@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { HiSun, HiMoon, HiBars3, HiXMark } from "react-icons/hi2";
-import logoLight from '../assets/JG_logo_ohne_Name_light.png';
-import logoDark from '../assets/JG_logo_ohne_Name_dark.png';
+import logoLight from '../assets/jglogolight.png';
+import logoDark from '../assets/jglogodark.png';
 import { Link } from 'react-scroll';
 
 const Navbar = ({ darkMode, setDarkMode }) => {

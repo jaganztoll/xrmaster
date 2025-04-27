@@ -1,6 +1,6 @@
 import React from 'react';
-import bhtDark from '../assets/bhtLogo_dark.png';
-import bhtLight from '../assets/bhtLogo_light.png';
+import bhtDark from '../assets/bhtlogodark.png';
+import bhtLight from '../assets/bhtlogolight.png';
 
 const Footer = ({ darkMode }) => {
   return (

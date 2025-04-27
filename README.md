@@ -1,12 +1,19 @@
-# React + Vite
+# XRMaster
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**XRMaster** ist die kurze Präsentation meiner Masterarbeit, in der ich die **Konzeption und prototypische Entwicklung einer Mixed-Reality-Version der ZDFmediathek im Ansatz von Spatial User Interfaces** untersuche.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologien
 
-## Expanding the ESLint configuration
+- **Adobe XD**: Für die Erstellung des prototypischen Designs.  
+- **React**: Für die Entwicklung der Web-Präsentation.  
+- **TailwindCSS**: Für das responsive Design und die einfache Anpassung von Styles.  
+- **Vite**: Für den schnellen Build-Prozess der Web-App.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+
+## Hinweise
+
+Die Inhalte dieser Website dienen der Präsentation meiner Masterarbeit und stellen keine kommerzielle Anwendung dar. Alle verwendeten Markenzeichen (wie **ZDF**) gehören den jeweiligen Inhabern.
