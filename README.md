@@ -4,12 +4,11 @@
 
 ---
 
-## Technologien
+- **Vite**
+- **Adobe XD**
+- **React**
+- **TailwindCSS** 
 
-- **Adobe XD**: Für die Erstellung des prototypischen Designs.  
-- **React**: Für die Entwicklung der Web-Präsentation.  
-- **TailwindCSS**: Für das responsive Design und die einfache Anpassung von Styles.  
-- **Vite**: Für den schnellen Build-Prozess der Web-App.
 
 ---
 
