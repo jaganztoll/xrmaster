@@ -1,3 +1,5 @@
+![Home](src/assets/readme.png)
+
 # XRMaster
 
 **XRMaster** ist eine kompakte, webbasierte Präsentation meiner Masterarbeit mit dem Titel:  
