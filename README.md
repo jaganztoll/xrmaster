@@ -13,6 +13,7 @@ Das Projekt untersucht, wie Medienplattformen für immersive Umgebungen neu geda
 
 - **Vite**
 - **React**
+- **JavaScript**
 - **TailwindCSS**
 - **Adobe XD**
 
