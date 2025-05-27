@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { HiSun, HiMoon, HiBars3, HiXMark } from "react-icons/hi2";
-import logoLight from "../assets/jglogolight.png";
-import logoDark from "../assets/jglogodark.png";
+import logoLight from "../assets/juliangruber_light.png";
+import logoDark from "../assets/juliangruber_dark.png";
 import { Link } from "react-scroll";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
@@ -21,11 +21,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 py-4 transition-colors duration-300 ${
-        scrolled
-          ? "bg-[var(--primary)] bg-opacity-80 shadow-md"
-          : "bg-transparent"
-      } text-[var(--text)] selection:bg-[var(--accent)]`}
+      className={`fixed top-0 w-full z-50 py-4 transition-colors duration-300 ${scrolled
+        ? "bg-[var(--primary)] bg-opacity-80 shadow-md"
+        : "bg-transparent"
+        } text-[var(--text)] selection:bg-[var(--accent)]`}
     >
       <div className="w-full max-w-screen-2xl mx-auto flex justify-between items-center px-6">
         {/* Logo */}
