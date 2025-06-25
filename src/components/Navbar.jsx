@@ -112,7 +112,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="absolute right-0 mt-4 flex flex-col space-y-4 px-6 py-4 bg-[var(--primary)] shadow-md rounded-md md:hidden z-50">
+        <div className="absolute top-full left-0 w-full flex flex-col items-center space-y-4 px-6 py-6 bg-[var(--primary)] shadow-md md:hidden z-40">
           <Link
             to="projectinfo"
             smooth={true}
@@ -163,7 +163,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               setDarkMode(!darkMode);
               setMenuOpen(false);
             }}
-            className="hover:bg-[var(--accent)] p-2 rounded-full self-start cursor-pointer"
+            className="hover:bg-[var(--accent)] p-2 rounded-full cursor-pointer"
           >
             {darkMode ? (
               <HiSun className="text-[var(--text)] text-2xl" />

@@ -5,14 +5,18 @@ import wavesDark from '../assets/waveswhite.svg';
 const Hero = ({ darkMode }) => {
   return (
     <section
-      className="h-screen w-full bg-no-repeat bg-bottom bg-fixed"
+      className="
+    relative min-h-screen w-full 
+    bg-no-repeat bg-bottom bg-fixed 
+    [background-size:600%_auto] md:[background-size:150%_auto]
+  "
       style={{
         fontFamily: 'var(--font-quicksand)',
         backgroundImage: `url(${darkMode ? wavesDark : wavesLight})`,
-        backgroundSize: 'clamp(110%, 80vw, 150%) auto',
         backgroundPosition: 'bottom',
       }}
     >
+
       <div className="h-full flex flex-col items-center justify-start pt-40 selection:bg-[var(--accent)]">
         <div className="bg-primary p-6 rounded-xl max-w-4xl text-center">
           <h1 className="font-regular text-2xl sm:text-3xl md:text-4xl">
