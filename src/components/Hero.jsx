@@ -8,7 +8,7 @@ const Hero = ({ darkMode }) => {
       className="
     relative min-h-screen w-full 
     bg-no-repeat bg-bottom bg-fixed 
-    [background-size:600%_auto] md:[background-size:150%_auto]
+    [background-size:500%_auto] md:[background-size:120%_auto]
   "
       style={{
         fontFamily: 'var(--font-quicksand)',
